@@ -15,7 +15,7 @@ public class PriceController {
         Price existPrice=priceRepository.findById(price.getId()).orElse(null);
         existPrice.setPrice(price.getPrice());
         existPrice.setEndDate(price.getEndDate());
-        existPrice.setEndDate(price.getEndDate());
+        existPrice.setStartDate(price.getStartDate());
         existPrice.setVatCode(price.getVatCode());
         existPrice.setCurrency(price.getCurrency());
         return priceRepository.save(existPrice);

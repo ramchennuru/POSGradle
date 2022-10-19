@@ -1,0 +1,8 @@
+jib {
+    from {
+        image = "gcr.io/distroless/java-debian10:11"
+    }
+    to {
+        image = project.name
+    }
+}
